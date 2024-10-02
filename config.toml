@@ -1,0 +1,61 @@
+baseurl = "https://jonahspector.net"
+languageCode = "en-us"
+title = "Jonah Spector's Website"
+theme = "xmin"
+ignoreFiles = [ "_cache$" ]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+writing = "/writing/:sections/:slug/"
+academics = "/:sections/:slug/"
+projects = "/projects/:sections/:slug/"
+about = "/about/:sections/:slug/"
+articles = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Writing"
+url = "writing/"
+weight = 3
+
+[[menu.main]]
+name = "Articles"
+url = "articles/"
+weight = 4
+
+[[menu.main]]
+name = "Academics"
+url = "academics/"
+weight = 5
+
+[[menu.main]]
+name = "Projects"
+url = "projects/"
+weight = 6
+
+[[menu.main]]
+name = "Subscribe"
+url = "index.xml"
+
+[params]
+description = "Jonah Spector's personal website."
+footer = "&copy; [Jonah Spector](https://jonahspector.net) 2024 -- {Year}"
+
+[markup]
+defaultMarkdownHandler = 'pandoc'
+
+[security.exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^pandoc$']
+
+[markup.highlight]
+codeFences = false
+

@@ -1,0 +1,6 @@
+[submodule "themes/xmin"]
+	path = themes/xmin
+	url = https://github.com/yihui/hugo-xmin.git
+[submodule "content/writing/interface"]
+	path = content/writing/interface
+	url = https://github.com/ihsotas0/Interface
