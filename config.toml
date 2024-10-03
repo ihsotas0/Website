@@ -2,7 +2,7 @@ baseurl = "https://jonahspector.net"
 languageCode = "en-us"
 title = "Jonah Spector's Website"
 theme = "xmin"
-ignoreFiles = [ "_cache$" ]
+ignoreFiles = [ "_cache$", "README.md", "LICENSE" ]
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
