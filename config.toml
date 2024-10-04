@@ -2,14 +2,14 @@ baseurl = "https://jonahspector.net"
 languageCode = "en-us"
 title = "Jonah Spector's Website"
 theme = "xmin"
-ignoreFiles = [ "_cache$", "README.md", "LICENSE" ]
+ignoreFiles = [ "^README.md$", "^LICENSE$" ]
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
-writing = "/writing/:sections/:slug/"
-academics = "/:sections/:slug/"
-projects = "/projects/:sections/:slug/"
-about = "/about/:sections/:slug/"
+writing = "/:sections/:slug/"
+academics = "/:slug/"
+projects = "/:slug/"
+about = "/:slug/"
 articles = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
